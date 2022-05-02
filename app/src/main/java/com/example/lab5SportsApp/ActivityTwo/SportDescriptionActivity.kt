@@ -1,18 +1,17 @@
-package com.example.lab5movielist.ActivityTwo
+package com.example.lab5SportsApp.ActivityTwo
 
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentManager
-import com.example.lab5movielist.MovieDescriptionFragment.MovieDescription
-import com.example.lab5movielist.R
-import com.example.lab5movielist.model.MovieDataClass
+import com.example.lab5SportsApp.SportsDescriptionFragment.SportsDescription
+import com.example.lab5SportsApp.R
+import com.example.lab5SportsApp.model.MovieDataClass
 
-class MovieDescriptionActivity : AppCompatActivity() {
+class SportDescriptionActivity : AppCompatActivity() {
     lateinit var movieDataClass: MovieDataClass
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_movie_description)
+        setContentView(R.layout.activity_sport_description)
         if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
            finish()
         }
@@ -22,7 +21,7 @@ class MovieDescriptionActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         val fragmentManager = supportFragmentManager
-        val movieDescription = fragmentManager.findFragmentById(R.id.fragmentTwo) as MovieDescription
+        val movieDescription = fragmentManager.findFragmentById(R.id.fragmentTwo) as SportsDescription
         movieDescription.getDatalandscap(movieDataClass)
     }
     

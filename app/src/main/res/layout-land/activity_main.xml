@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MovieListActivity.MainActivity"
+    tools:context=".SportsListActivity.MainActivity"
     android:weightSum="3">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentOne"
-        android:name="com.example.lab5movielist.MovieListFragment.movieListFragment"
+        android:name="com.example.lab5SportsApp.SportsListFragment.movieListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"/>
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentTwoLandScap"
-        android:name="com.example.lab5movielist.MovieDescriptionFragment.MovieDescription"
+        android:name="com.example.lab5SportsApp.SportsDescriptionFragment.SportsDescription"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="2"/>

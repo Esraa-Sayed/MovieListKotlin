@@ -1,4 +1,4 @@
-package com.example.lab5movielist
+package com.example.lab5SportsApp
 
 import org.junit.Test
 

@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieListActivity.MainActivity">
+    tools:context=".SportsListActivity.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentTwo"
-        android:name="com.example.lab5movielist.MovieDescriptionFragment.MovieDescription"
+        android:name="com.example.lab5SportsApp.SportsDescriptionFragment.SportsDescription"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
